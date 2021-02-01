@@ -14,6 +14,8 @@
 		E9CE36F025C84A28001BD896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE36EF25C84A28001BD896 /* Assets.xcassets */; };
 		E9CE36F325C84A28001BD896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE36F225C84A28001BD896 /* Preview Assets.xcassets */; };
 		E9CE36F625C84A28001BD896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9CE36F425C84A28001BD896 /* LaunchScreen.storyboard */; };
+		E9CE370125C84CE2001BD896 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE370025C84CE2001BD896 /* Memo.swift */; };
+		E9CE370425C84E69001BD896 /* MemoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE370325C84E69001BD896 /* MemoStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		E9CE36F225C84A28001BD896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E9CE36F525C84A28001BD896 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9CE36F725C84A28001BD896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9CE370025C84CE2001BD896 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		E9CE370325C84E69001BD896 /* MemoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		E9CE36E525C84A28001BD896 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9CE36FF25C84CCC001BD896 /* Model */,
 				E9CE36E625C84A28001BD896 /* AppDelegate.swift */,
 				E9CE36E825C84A28001BD896 /* SceneDelegate.swift */,
 				E9CE36EA25C84A28001BD896 /* MemoListScene.swift */,
@@ -76,6 +81,15 @@
 				E9CE36F225C84A28001BD896 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9CE36FF25C84CCC001BD896 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9CE370025C84CE2001BD896 /* Memo.swift */,
+				E9CE370325C84E69001BD896 /* MemoStore.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9CE36E725C84A28001BD896 /* AppDelegate.swift in Sources */,
+				E9CE370425C84E69001BD896 /* MemoStore.swift in Sources */,
 				E9CE36EE25C84A28001BD896 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				E9CE36E925C84A28001BD896 /* SceneDelegate.swift in Sources */,
 				E9CE36EB25C84A28001BD896 /* MemoListScene.swift in Sources */,
+				E9CE370125C84CE2001BD896 /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
