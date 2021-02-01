@@ -20,12 +20,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 		// Get the managed object context from the shared persistent container.
 		let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+		
+		// SwiftUI 뷰를 생성하고 context를 managedObjectContext 환경 keyPath의 값으로 설정
+		// 컨텍스트가 필요한 뷰에`@Environment (\. managedObjectContext)`를 추가합니다.
+		let contentView = MemoListScene().environment(\.managedObjectContext, context)
 
-		// Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
-		// Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-		let contentView = ContentView().environment(\.managedObjectContext, context)
-
-		// Use a UIHostingController as window root view controller.
+		// 여기서 첫번째 화면을 표시해주고 있음
 		if let windowScene = scene as? UIWindowScene {
 		    let window = UIWindow(windowScene: windowScene)
 		    window.rootViewController = UIHostingController(rootView: contentView)

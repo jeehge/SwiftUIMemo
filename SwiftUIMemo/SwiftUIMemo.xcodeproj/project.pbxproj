@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E9CE36E725C84A28001BD896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE36E625C84A28001BD896 /* AppDelegate.swift */; };
 		E9CE36E925C84A28001BD896 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE36E825C84A28001BD896 /* SceneDelegate.swift */; };
-		E9CE36EB25C84A28001BD896 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE36EA25C84A28001BD896 /* ContentView.swift */; };
+		E9CE36EB25C84A28001BD896 /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE36EA25C84A28001BD896 /* MemoListScene.swift */; };
 		E9CE36EE25C84A28001BD896 /* SwiftUIMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E9CE36EC25C84A28001BD896 /* SwiftUIMemo.xcdatamodeld */; };
 		E9CE36F025C84A28001BD896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE36EF25C84A28001BD896 /* Assets.xcassets */; };
 		E9CE36F325C84A28001BD896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9CE36F225C84A28001BD896 /* Preview Assets.xcassets */; };
@@ -20,7 +20,7 @@
 		E9CE36E325C84A28001BD896 /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE36E625C84A28001BD896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9CE36E825C84A28001BD896 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9CE36EA25C84A28001BD896 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E9CE36EA25C84A28001BD896 /* MemoListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListScene.swift; sourceTree = "<group>"; };
 		E9CE36ED25C84A28001BD896 /* SwiftUIMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUIMemo.xcdatamodel; sourceTree = "<group>"; };
 		E9CE36EF25C84A28001BD896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9CE36F225C84A28001BD896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 			children = (
 				E9CE36E625C84A28001BD896 /* AppDelegate.swift */,
 				E9CE36E825C84A28001BD896 /* SceneDelegate.swift */,
-				E9CE36EA25C84A28001BD896 /* ContentView.swift */,
+				E9CE36EA25C84A28001BD896 /* MemoListScene.swift */,
 				E9CE36EF25C84A28001BD896 /* Assets.xcassets */,
 				E9CE36F425C84A28001BD896 /* LaunchScreen.storyboard */,
 				E9CE36F725C84A28001BD896 /* Info.plist */,
@@ -151,7 +151,7 @@
 				E9CE36E725C84A28001BD896 /* AppDelegate.swift in Sources */,
 				E9CE36EE25C84A28001BD896 /* SwiftUIMemo.xcdatamodeld in Sources */,
 				E9CE36E925C84A28001BD896 /* SceneDelegate.swift in Sources */,
-				E9CE36EB25C84A28001BD896 /* ContentView.swift in Sources */,
+				E9CE36EB25C84A28001BD896 /* MemoListScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
