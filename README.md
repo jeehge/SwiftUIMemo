@@ -13,4 +13,4 @@ SwiftUI로 메모앱을 만들어보자!
 [[Mastering SwiftUI] 메모 앱 만들기 #4. 리스트 디자인](https://www.youtube.com/watch?v=okpZhPOBCBo)
 
 
-[[Mastering SwiftUI] 메모 앱 만들기 #5. 리스트 리팩토링](Mastering SwiftUI] 메모 앱 만들기 #5. 리스트 리팩토링)
+[[Mastering SwiftUI] 메모 앱 만들기 #5. 리스트 리팩토링](https://www.youtube.com/watch?v=czqFCBQMcHI)
