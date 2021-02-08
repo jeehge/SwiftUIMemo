@@ -26,6 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		// 컨텍스트가 필요한 뷰에`@Environment (\. managedObjectContext)`를 추가합니다.
 		let contentView = MemoListScene().environment(\.managedObjectContext, context)
 			.environmentObject(store)
+			.environmentObject(DateFormatter.memoDateFormatter)
 		// 여기서 첫번째 화면을 표시해주고 있음
 		if let windowScene = scene as? UIWindowScene {
 		    let window = UIWindow(windowScene: windowScene)
