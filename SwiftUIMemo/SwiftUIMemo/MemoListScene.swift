@@ -16,16 +16,9 @@ struct MemoListScene: View {
     var body: some View {
 		NavigationView {
 			List(store.list) { memo in
-				VStack(alignment: .leading) {
-					Text(memo.content)
-						.font(.body)
-						.lineLimit(1)
-					
-					Text("\(memo.insertDate, formatter: self.formatter)")
-						.font(.caption)
-						.foregroundColor(Color(UIColor.secondaryLabel))
-						
-				}
+				// 뷰는 최대한 분리하는 게 좋습니다.
+				// SwiftUI는 뷰를 분리한다고 오버헤드가 생기지 않는다고 합니다.
+				MemoCell(memo: memo)
 			}
 			.navigationTitle("내 메모")
 			// Modifier 메소드

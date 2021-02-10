@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E998B0E925D0B86C008DD6D6 /* DateFormatter+Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E998B0E825D0B86C008DD6D6 /* DateFormatter+Memo.swift */; };
+		E9AA2CEA25D3A01D006DD827 /* MemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA2CE925D3A01D006DD827 /* MemoCell.swift */; };
 		E9CE36E725C84A28001BD896 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE36E625C84A28001BD896 /* AppDelegate.swift */; };
 		E9CE36E925C84A28001BD896 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE36E825C84A28001BD896 /* SceneDelegate.swift */; };
 		E9CE36EB25C84A28001BD896 /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CE36EA25C84A28001BD896 /* MemoListScene.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		E998B0E825D0B86C008DD6D6 /* DateFormatter+Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Memo.swift"; sourceTree = "<group>"; };
+		E9AA2CE925D3A01D006DD827 /* MemoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoCell.swift; sourceTree = "<group>"; };
 		E9CE36E325C84A28001BD896 /* SwiftUIMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9CE36E625C84A28001BD896 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9CE36E825C84A28001BD896 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		E9AA2CE825D39FFC006DD827 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9AA2CE925D3A01D006DD827 /* MemoCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E9CE36DA25C84A28001BD896 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 		E9CE36E525C84A28001BD896 /* SwiftUIMemo */ = {
 			isa = PBXGroup;
 			children = (
+				E9AA2CE825D39FFC006DD827 /* View */,
 				E998B0E725D0B848008DD6D6 /* Extension */,
 				E9CE36FF25C84CCC001BD896 /* Model */,
 				E9CE36E625C84A28001BD896 /* AppDelegate.swift */,
@@ -180,6 +191,7 @@
 				E9CE36E925C84A28001BD896 /* SceneDelegate.swift in Sources */,
 				E9CE36EB25C84A28001BD896 /* MemoListScene.swift in Sources */,
 				E9CE370125C84CE2001BD896 /* Memo.swift in Sources */,
+				E9AA2CEA25D3A01D006DD827 /* MemoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
