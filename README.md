@@ -34,7 +34,7 @@ SwiftUI로 메모앱을 만들어보자!
 [[Mastering SwiftUI] 메모 앱 만들기 #11. 메모 보기 화면](https://www.youtube.com/watch?v=CqQQGDaAbUI)
 
 
-[[Mastering SwiftUI] 메모 앱 만들기 # 12. 메모 편집 화면](https://www.youtube.com/watch?v=5DlyJLjPCHA)
+[[Mastering SwiftUI] 메모 앱 만들기 #12. 메모 편집 화면](https://www.youtube.com/watch?v=5DlyJLjPCHA)
 
 
 [[Mastering SwiftUI] 메모 앱 만들기 #13. 메모 삭제 구현](https://www.youtube.com/watch?v=sNZn_9PbJn4)
