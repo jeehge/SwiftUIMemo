@@ -27,7 +27,7 @@ struct MemoListScene: View {
 			// SwiftUI에선 특별한 메소드 활용하여 필요한 속성을 바꾸거나 뷰를 조작함
 			.navigationBarItems(trailing: ModelButton(show: $showComposer)) // 여기서 전달된 속성은 ModelButton의 show에 저장됨. 복사되어서 저장되는게 아니라 바인딩되어 저장됨
 			.sheet(isPresented: $showComposer, content: {
-				ComposeScene(showComposer: self.$showComposer)
+				ComposeScene(showComposer: self.$showComposer).environmentObject(self.store)
 			})
 		}
     }

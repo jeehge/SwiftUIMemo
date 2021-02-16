@@ -20,10 +20,11 @@ struct ComposeScene: View {
 				// TextField 에 문자를 입력하면 content에 저장됨
 				// 2 way 바인딩
 				TextField("", text: $content)
+					.background(Color.yellow)
 			}
 			.frame(maxWidth: .infinity, maxHeight: .infinity)
 			.navigationBarTitle("새 메모", displayMode: .inline) // 기본이 라지 타이틀 ndisplayMode 지정해주면
-			.navigationBarItems(leading: DismissButton(show: $showComposer), trailing: Savebutton(show: $showComposer))
+			.navigationBarItems(leading: DismissButton(show: $showComposer), trailing: Savebutton(show: $showComposer, content: $content))
 		}
     }
 }
@@ -43,8 +44,14 @@ fileprivate struct DismissButton: View {
 fileprivate struct Savebutton: View {
 	@Binding var show: Bool
 	
+	// 자동으로 주입되도록
+	@EnvironmentObject var store: MemoStore
+	// 입력한 값
+	@Binding var content: String
+	
 	var body: some View {
 		Button(action: {
+			self.store.insert(memo: self.content)
 			self.show = false
 		}, label: {
 			Text("저장")
