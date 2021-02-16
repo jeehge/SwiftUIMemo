@@ -11,6 +11,7 @@ struct ComposeScene: View {
 	@EnvironmentObject var store: MemoStore
 	// 입력한 테스트 바인딩 하는 속성으로 State 사용
 	@State private var content: String = ""
+	@Binding var showComposer: Bool
 	
     var body: some View {
 		NavigationView {
@@ -22,15 +23,17 @@ struct ComposeScene: View {
 			}
 			.frame(maxWidth: .infinity, maxHeight: .infinity)
 			.navigationBarTitle("새 메모", displayMode: .inline) // 기본이 라지 타이틀 ndisplayMode 지정해주면
-			.navigationBarItems(leading: DismissButton(), trailing: Savebutton())
+			.navigationBarItems(leading: DismissButton(show: $showComposer), trailing: Savebutton(show: $showComposer))
 		}
     }
 }
 
 fileprivate struct DismissButton: View {
+	@Binding var show: Bool
+	
 	var body: some View {
 		Button(action: {
-			
+			self.show = false
 		}, label: {
 			Text("취소")
 		})
@@ -38,9 +41,11 @@ fileprivate struct DismissButton: View {
 }
 
 fileprivate struct Savebutton: View {
+	@Binding var show: Bool
+	
 	var body: some View {
 		Button(action: {
-			
+			self.show = false
 		}, label: {
 			Text("저장")
 		})
@@ -49,6 +54,6 @@ fileprivate struct Savebutton: View {
 
 struct ComposeScene_Previews: PreviewProvider {
     static var previews: some View {
-		ComposeScene().environmentObject(MemoStore())
+		ComposeScene(showComposer: .constant(false)).environmentObject(MemoStore())
     }
 }
